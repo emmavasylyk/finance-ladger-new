@@ -1,4 +1,4 @@
-import Form from '../Form/Form';
+import FormContact from '../Form/Form';
 import css from './Contact.module.css';
 
 export default function Contact() {
@@ -7,7 +7,7 @@ export default function Contact() {
       <div className={css.contactContainer}>
         <div className={css.contactWrapper}>
           <h2 className={css.contactTitle}>Request Callback</h2>
-          <Form />
+          <FormContact />
         </div>
       </div>
     </section>
