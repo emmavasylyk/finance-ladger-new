@@ -1,0 +1,29 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-text-color);
+  font-size: 32px;
+  line-height: 1.32;
+  transition: transform var(--anim-duration) var(--anim-timing-function);
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-bottom: 12px;
+  }
+}
+.logo:hover,
+.logo:focus {
+  transform: scale(1.04);
+}
+.logoIcon {
+  fill: var(--second-text-color);
+}
+.logoText {
+  margin-left: 6px;
+  color: var(--second-text-color);
+}
+.logoText:hover,
+.logoText:focus {
+  color: var(--logo-text-color);
+}

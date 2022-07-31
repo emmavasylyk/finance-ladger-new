@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  width: 100vw;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: var(--mobile);
+    margin: 0 auto;
+    padding: 0 var(--mobile-padding);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: var(--tablet);
+    padding: 0 var(--tablet-padding);
+  }
+}
+@media screen and (min-width: 1360px) {
+  .container {
+    width: var(--desktop);
+    padding: 0 var(--desktop-padding);
+  }
+}

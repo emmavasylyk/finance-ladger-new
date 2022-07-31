@@ -1,0 +1,119 @@
+.formField {
+  position: relative;
+}
+.formField:not(:last-child) {
+  margin-bottom: 32px;
+}
+.formField:nth-child(2) {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1360px) {
+  .formField:nth-child(2) {
+    margin-bottom: 60px;
+  }
+}
+.formInput {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 1.44;
+  outline: none;
+  border: 1px solid var(--fourth-background-section);
+  color: var(--third-text-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .formInput {
+    font-size: 18px;
+    line-height: 1.28;
+    width: 324px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .formInput {
+    line-height: 1.56;
+    width: 620px;
+  }
+}
+.formInputRequired {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  color: var(--error-color);
+}
+.formInputRequired::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  background-image: url('./../../images/form/worning.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.formLabel {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  color: var(--form-color);
+}
+.formInput:focus + .formLabel,
+.formInput:not(:placeholder-shown) + .formLabel {
+  top: 0;
+  transform: translateY(calc(-100% - 4px));
+  color: var(--second-text-color);
+}
+.formButton {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.38;
+  margin: 0 auto;
+  height: 42px;
+  width: 280px;
+  background-color: var(--second-text-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--main-text-color);
+  transition: transform var(--anim-duration) var(--anim-timing-function);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1360px) {
+  .formButton {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .formButton {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .formButton {
+    width: 336px;
+  }
+}
+.formButton:hover,
+.formButton:focus {
+  opacity: 0.8;
+}
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

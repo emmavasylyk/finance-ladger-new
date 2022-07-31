@@ -1,0 +1,44 @@
+.footer {
+  padding: 20px 0px;
+  margin: 0 auto;
+  background: var(--third-text-color);
+}
+
+.footerText {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .footerText {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+.footerSocialList {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+.socialItem:not(:last-child) {
+  margin-right: 25px;
+}
+@media screen and (min-width: 1360px) {
+  .footerSocialList {
+    margin-bottom: 6px;
+  }
+}
+.socialIcon {
+  width: 35px;
+  height: 35px;
+  fill: var(--main-text-color);
+}
+.socialIcon:hover {
+  fill: var(--second-text-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .socialIcon {
+    font-size: 35px;
+  }
+}

@@ -1,0 +1,142 @@
+.hero {
+  text-align: center;
+  margin: 0 auto;
+  max-height: 533px;
+  padding-top: 142px;
+  padding-bottom: 96px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--third-text-color);
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../../images/home/showcase.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../../images/home/showcase@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .hero {
+    max-height: 1024px;
+    padding: 407px 0px 410px;
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../../images/home/showcase.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1359px),
+  (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1359px),
+  (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1359px) {
+  .hero {
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../../images/home/showcase@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .hero {
+    max-height: 768px;
+    padding: 279px 0px 282px;
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../../images/home/showcase.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1360px),
+  (min-resolution: 192dpi) and (min-width: 1360px),
+  (min-resolution: 2dppx) and (min-width: 1360px) {
+  .hero {
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../../images/home/showcase@2x.jpg);
+  }
+}
+.heroTitle {
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 1.27;
+  color: var(--hero-text-color);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1360px) {
+  .heroTitle {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+}
+
+.heroText {
+  font-size: 22px;
+  line-height: 1.67;
+  color: var(--hero-text-color);
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .heroText {
+    margin-bottom: 32px;
+  }
+}
+
+.heroButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  width: 156px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 5px;
+  color: var(--main-text-color);
+  background-color: var(--second-text-color);
+  border: none;
+  transition: transform var(--anim-duration) var(--anim-timing-function);
+  cursor: pointer;
+}
+.heroButton:hover,
+.heroButton:focus {
+  opacity: 0.8;
+}
+@media screen and (min-width: 768px) {
+  .heroButton {
+    width: 165px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}

@@ -1,0 +1,109 @@
+.cases {
+  padding: 40px 0px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--third-text-color);
+  background: var(--main-text-color);
+}
+@media screen and (min-width: 1360px) {
+  .cases {
+    padding: 80px 0px;
+  }
+}
+.casesContainer {
+  width: 100vw;
+  padding: 0 var(--mobile-padding);
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .casesContainer {
+    padding: 0 var(--tablet-padding);
+  }
+}
+@media screen and (min-width: 1360px) {
+  .casesContainer {
+    padding: 0 var(--desktop-padding);
+  }
+}
+.casesQuestion {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .casesQuestion {
+    font-size: 20px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+  }
+}
+.casesTitle {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .casesTitleCorrect {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .casesTitle {
+    margin-bottom: 24px;
+  }
+}
+.casesText {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .casesText {
+    font-size: 18px;
+    line-height: 1.56;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .casesList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .casesList {
+    margin: -8px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .casesList {
+    margin: -10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .casesItem:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .casesItem {
+    width: calc((100% - 6 * 8px) / 3);
+    margin: 8px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .casesItem {
+    width: calc((100% - 6 * 10px) / 3);
+    margin: 10px;
+  }
+}
+.casesImage {
+  max-width: 100%;
+  opacity: 1;
+}
+.casesItem:hover .casesImage,
+.casesItem:focus .casesImage {
+  opacity: 0.8;
+}
