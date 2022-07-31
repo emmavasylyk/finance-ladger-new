@@ -62,7 +62,7 @@
   background: var(--fourth-background-section);
   padding: 40px 20px;
   width: var(--mobile);
-  margin: 0 auto;
+  margin: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 1359px) {
   .contactContainer {

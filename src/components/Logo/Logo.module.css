@@ -12,6 +12,12 @@
     margin-bottom: 12px;
   }
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    line-height: 1.21;
+  }
+}
+
 .logo:hover,
 .logo:focus {
   transform: scale(1.04);

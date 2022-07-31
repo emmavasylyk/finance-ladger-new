@@ -26,8 +26,8 @@
 }
 
 html {
-  overflow: overlay;
-  scrollbar-width: thin;
+  /* overflow: overlay;
+  scrollbar-width: thin; */
 }
 
 body {
