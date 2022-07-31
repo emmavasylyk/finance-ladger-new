@@ -4,7 +4,7 @@
   left: 0;
   display: block;
   min-height: 120px;
-  width: 100%;
+  width: 100vw;
   padding-top: 20px;
   z-index: 1;
   overflow: hidden;
@@ -57,7 +57,7 @@
   transform: scaleX(1);
 }
 .headerContainer {
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   padding: 0 20px;
 }
