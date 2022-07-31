@@ -1,5 +1,5 @@
 import { FaFacebook, FaTwitter, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
-import Container from '../Container/Container';
+// import Container from '../Container/Container';
 import { Picture } from '../Picture/Picture';
 import css from './Team.module.css';
 
@@ -19,7 +19,8 @@ import person3Webp2x from '../../images/team/person3@2x.webp';
 export default function Team() {
   return (
     <section id="team" className={css.team}>
-      <Container>
+      <div className={css.teamContainer}>
+        {/* <Container> */}
         <h3 className={css.teamQuestion}>Who we are</h3>
         <h2 className={css.teamTitle}>Our Professional Team</h2>
         <p className={css.teamText}>
@@ -193,7 +194,8 @@ export default function Team() {
             </div>
           </li>
         </ul>
-      </Container>
+        {/* </Container> */}
+      </div>
     </section>
   );
 }

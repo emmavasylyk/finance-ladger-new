@@ -11,6 +11,22 @@
     padding: 80px 0px;
   }
 }
+.teamContainer {
+  width: 100vw;
+  padding: 0 var(--mobile-padding);
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .teamContainer {
+    padding: 0 var(--tablet-padding);
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .teamContainer {
+    padding: 0 var(--desktop-padding);
+  }
+}
 .teamQuestion {
   font-weight: 400;
   font-size: 18px;
