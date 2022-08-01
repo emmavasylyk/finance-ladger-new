@@ -11,7 +11,7 @@
   }
 }
 .casesContainer {
-  width: 100vw;
+  /* width: 100vw; */
   padding: 0 var(--mobile-padding);
   margin: 0 auto;
 }
